@@ -1,7 +1,7 @@
 # GSTaggedProgressView
 GSTaggedProgressView is a horizontal progressview with tag on it.
 
-![GSTaggedProgressView](https://github.com/Chren/GSTaggedProgressView/blob/master/GSTaggedProgressViewExample/ScreenShot/screenshot.png)
+<img src="https://github.com/Chren/GSTaggedProgressView/blob/master/GSTaggedProgressViewExample/ScreenShot/screenshot.png" width = "320" height = "568" alt="GSTaggedProgressView" align=center />
 
 ## Howto Install
 ### Install with CocoaPods
