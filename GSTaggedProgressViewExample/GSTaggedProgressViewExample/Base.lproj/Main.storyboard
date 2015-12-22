@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="W4b-Mz-Za1" customClass="GSTaggedProgressView">
+                                <rect key="frame" x="40" y="78" width="520" height="4"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="TyW-PK-eBV"/>
+                                </constraints>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aRp-4f-TVZ" customClass="GSTaggedProgressView">
+                                <rect key="frame" x="40" y="182" width="520" height="4"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="EsY-iz-ZgZ"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W4b-Mz-Za1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="PIT-EP-dNf"/>
+                            <constraint firstItem="aRp-4f-TVZ" firstAttribute="top" secondItem="W4b-Mz-Za1" secondAttribute="bottom" constant="100" id="QJV-Df-s1P"/>
+                            <constraint firstItem="W4b-Mz-Za1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="58" id="Rb2-9R-SpX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W4b-Mz-Za1" secondAttribute="trailing" constant="20" id="UZ7-Y2-ZnX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aRp-4f-TVZ" secondAttribute="trailing" constant="20" id="baI-OS-k19"/>
+                            <constraint firstItem="aRp-4f-TVZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="v78-5V-YYP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstProgressView" destination="W4b-Mz-Za1" id="te0-Il-KSi"/>
+                        <outlet property="secondProgressView" destination="aRp-4f-TVZ" id="ieK-1M-iBX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="337"/>
+        </scene>
+    </scenes>
+</document>
